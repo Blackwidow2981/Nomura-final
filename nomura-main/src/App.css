@@ -1,0 +1,1263 @@
+.App {
+  height: 100%;
+  width: 100%;
+  background-color: #ffff;
+  color: white;
+  font-family: 'Lucida Sans';
+  padding: 0%;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #BCD2E8; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+
+.Header {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  height: 10vh;
+  background-color: #0000bf;
+  align-items: center;
+}
+
+
+.Header .page-title {
+  font-size: 5vh;
+  color: white;
+  margin-left: 5vw;
+  text-align: left;
+}
+
+.AnswerCall {
+  background-color: #BCD2E8;
+  width: 15vw;
+  height: 5vh;
+  border-radius: 5px;
+  border: 1px solid #1F2C73;
+  justify-self: center;
+  font-size: 20px;
+}
+
+.main-container {
+  display: grid;
+ background-color:#ffffff;
+  height: 90vh;
+  padding: 0;
+}
+
+.Sidebar {
+  height: 90vh;
+  background-color: #0000bf;
+}
+
+.sidebar-logo {
+  height: 45px;
+  width: 45px;
+}
+
+.sidebar-list {
+  height: 90vh;
+  width: 100%;
+  padding: 0%;
+}
+
+.sidebar-list .row {
+  width: 100%;
+  height: 80px;
+  list-style: none;
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-list .row:hover {
+  background-color: #1F2C73;
+}
+
+.sidebar-list #active {
+  background-color: #1F2C73;
+}
+
+.profile{
+  display: grid;
+  grid-template-columns: 5% 95%;
+}
+
+.profile .navbar{
+  grid-column: 1/span 1;
+  background-color:#0000bf;
+}
+
+.profile .profile-box{
+  grid-column: 2/span 1;
+  height: 78vh;
+  background: #FEFEFE;
+  box-shadow: 4px 4px 17px 5px #EFEFEF;
+  border-radius: 30px;
+  margin:2vh;
+  padding: 2% 5%;
+  display:grid;
+  overflow-y: auto;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 2fr 2fr 5fr;
+}
+
+.profile .profile-box h1{
+  grid-column: 1/span 3;
+  color:#000000;
+  text-align: left;
+  align-items:center;
+  margin: 0;
+}
+
+.profile .profile-box .Name{
+  grid-column: 1/span 1;
+  color:#000000;
+  align-items:center;
+}
+
+.profile .profile-box .Phone{
+  grid-column: 2/span 1;
+  color:#000000;
+  align-items:center;
+
+}
+.profile .profile-box .Address{
+  grid-column: 3/span 1;
+  color:#000000;
+  align-items:center;
+}
+
+.profile .profile-box .Fam{
+  grid-row: 3/span 1;
+  color:#000000;
+  align-items:center;
+}
+
+.profile .profile-box .Fam .work{
+  grid-row: 3/span 1;
+  color:#000000;
+  width: 120px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.profile .profile-box .City{
+  grid-column: 2/span 1;
+  grid-row: 3/span 1;
+  color:#000000;
+  align-items:center;
+}
+
+.profile .profile-box .City .work{
+  grid-row: 3/span 1;
+  color:#000000;
+  width: 120px;
+  height: 24px;
+  margin-top: -10px;
+  padding: 0.5vh;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.profile .profile-box .Requests {
+  background-color: #BCD2E8;
+  grid-column: 4/ span 1;
+  grid-row: 1/ span 3;
+  border-radius: 10px;
+  padding: 10px;
+  color: #000000;
+  overflow-y: auto;
+}
+
+.profile .profile-box .Requests .Request{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  color: #000000;
+  display: grid;
+  margin-bottom: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Request .Status {
+  justify-self: right;
+  border: #0000bf 1px solid;
+  grid-column: 4/ span 1;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.profile .profile-box .PastHirings{
+  grid-row: 4/ span 1;
+  grid-column: 1/ span 4;
+  color: #000000;
+  margin-top: 2%;
+  background-color: #BCD2E8;
+  border-radius: 10px;
+  padding: 1%;
+  overflow-y: auto;
+  height: 35vh;
+}
+
+.profile .profile-box .PastHirings .YourHirings {
+  margin-top: 1%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr 1fr;
+}
+
+.profile .profile-box .PastHirings .YourHirings .MaidName{
+  grid-column: 1/span 1;
+}
+
+.profile .profile-box .PastHirings .YourHirings .RatingOrEnd{
+  justify-self: center;
+}
+
+.EndContract {
+  background-color: #0000FF;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  padding: 3px 10px;
+}
+
+.profile-maid .profile-box-maid{
+  grid-column: 2/span 1;
+  height: 78vh;
+  background: #FEFEFE;
+  box-shadow: 4px 4px 17px 5px #EFEFEF;
+  border-radius: 30px;
+  margin:2vh;
+  padding: 2% 5%;
+  display:grid;
+  overflow-y: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 2fr 2fr 4fr;
+}
+
+.profile-maid .profile-box-maid h1{
+  grid-column: 1/span 3;
+  color:#000000;
+  text-align: left;
+  align-items:center;
+  margin: 0;
+}
+
+.profile-maid .profile-box-maid .Name{
+  grid-column: 1/span 1;
+  color:#000000;
+  align-items:center;
+}
+
+.profile-maid .profile-box-maid .Phone{
+  grid-column: 2/span 1;
+  color:#000000;
+  align-items:center;
+
+}
+.profile-maid .profile-box-maid .Address{
+  grid-column: 3/span 1;
+  color:#000000;
+  align-items:center;
+}
+
+.profile-maid .profile-box-maid .Fam{
+  grid-row: 3/span 1;
+  color:#000000;
+  align-items:center;
+}
+
+.profile-maid .profile-box-maid .Fam .work{
+  grid-row: 3/span 1;
+  color:#000000;
+  width: 120px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.profile-maid .profile-box-maid .City{
+  grid-column: 2/span 1;
+  grid-row: 3/span 1;
+  color:#000000;
+  align-items:center;
+}
+
+.profile-maid .profile-box-maid .City .work{
+  grid-row: 3/span 1;
+  color:#000000;
+  width: 120px;
+  height: 24px;
+  margin-top: -10px;
+  padding: 0.5vh;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.profile-maid .profile-box-maid .Rating{
+  grid-column: 3/span 1;
+  grid-row: 3/span 1;
+  color:#000000;
+  align-items:center;
+}
+
+.profile-maid .profile-box-maid .Type{
+  grid-column: 4/span 1;
+  grid-row: 2/span 2;
+  color:#000000;
+  align-items:center;
+}
+
+.profile-maid .profile-box-maid .Requests {
+  background-color: #BCD2E8;
+  grid-column: 5/ span 1;
+  grid-row: 1/ span 3;
+  border-radius: 10px;
+  padding: 10px;
+  color: #000000;
+  overflow-y: auto;
+}
+
+.profile-maid .profile-box-maid .Requests .Request{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  color: #000000;
+  display: grid;
+  margin-bottom: 10px;
+  grid-template-columns: 2fr 2fr 1fr ;
+}
+
+.Request .Status {
+  justify-self: right;
+  border: #0000bf 1px solid;
+  grid-column: 4/ span 1;
+  background-color: #BCD2E8;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.profile-maid .profile-box-maid .PastHirings{
+  grid-row: 4/ span 1;
+  grid-column: 1/ span 5;
+  color: #000000;
+  margin-top: 2%;
+  background-color: #BCD2E8;
+  border-radius: 10px;
+  padding: 1%;
+  overflow-y: auto;
+  height: 35vh;
+}
+
+.profile-maid .profile-box-maid .PastHirings .YourHirings {
+  margin-top: 1%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.profile-maid .profile-box-maid .PastHirings .YourHirings .MaidName{
+  grid-column: 1/span 1;
+}
+
+.profile-maid .profile-box-maid .PastHirings .YourHirings .RatingOrEnd{
+  justify-self: center;
+}
+
+.db{
+  display: grid;
+  grid-template-columns: 5% 95%;
+}
+
+.db .navbar{
+  grid-column: 1/span 1;
+  background-color:#0000bf;
+}
+
+.db .db-box{
+  grid-column: 2/span 1;
+  height: 82vh;
+  background: #FEFEFE;
+  box-shadow: 4px 4px 17px 5px #EFEFEF;
+  border-radius: 30px;
+  margin:2vh;
+  padding-right: 8vw;
+  padding-left: 8vw;
+  padding-top: 5vh;
+  overflow-y: auto;
+}
+
+.db .db-box .Filters{
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+  color:#000000;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-column-gap: 20px;
+}
+
+.db .bai-profile{
+  height: 30vh;
+  background: #EFEFEF;
+  box-shadow: 0px 4px 4px #FFFFFF;
+  border-radius: 10px;
+  margin: 5vh 0;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.db .bai-profile .photo{
+  grid-column: 1/span 1;
+  height: 70%;
+  width: 70%;
+  border-radius:50%;
+  background:#0000bf;
+  align-self: center;
+  justify-self: center;
+}
+.db .bai-profile .ratesnhire{
+  grid-column: 3/ span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.db .bai-profile .Rating{
+  color: #000000;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.db .bai-profile .Hire{
+  padding: 7% 20% ;
+  width: 100%;
+  color:#EFEFEF;
+  background: #0000FF;
+  border-radius: 15px;
+  align-self: center;
+  justify-self: center;
+}
+
+.db .bai-profile .AlreadyRequested {
+  color: #000000;
+  font-size: 14px;
+  padding: 7% 17% ;
+  border-radius: 15px;
+  border: #000000 1px solid;
+  align-self: center;
+  justify-self: center;
+}
+
+.db .bai-profile .description{
+  width:auto;
+  color: #000000;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+  padding-left: 10%;
+}
+
+.db .bai-profile .description .col1 {
+  grid-column: 1/ span 1;
+}
+
+.db .bai-profile .description .col2{
+  grid-column: 2/ span 1;
+}
+
+.boldheading {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.descunderbold{
+  font-weight: lighter;
+}
+
+.exit-contract{
+  display: grid;
+  grid-template-columns: 5% 95%;
+}
+
+.exit-contract .navbar{
+  grid-column: 1/span 1;
+  background-color:#0000bf;
+}
+
+.exit-contract .db-box{
+  grid-column: 2/span 1;
+  height:480px;
+  background: #FEFEFE;
+  box-shadow: 4px 4px 17px 5px #EFEFEF;
+  border-radius: 30px;
+  margin:2vh;
+  display:grid;
+  overflow-y: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+}
+
+.exit-contract .db-box h1{
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+  color:#000000;
+  margin-left: 1px;
+  text-align: center;
+  align-items:center;
+  padding-top: 20px;
+}
+
+.exit-contract .bai-profile{
+  grid-row:2/span 3;
+  grid-column: 1/ span 4;
+  background: #EFEFEF;
+  box-shadow: 0px 4px 4px #FFFFFF;
+  border-radius: 10px;
+  margin:5vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.exit-contract .bai-profile .photo{
+  grid-column: 1/span 1;
+  height: 150px;
+  width:150px;
+  border-radius:50%;
+  background:#0000bf;
+  margin-left: 25%;
+  align-items: center;
+  margin-top: 2vh;
+}
+.exit-contract .bai-profile .Hire{
+  grid-column: 3/ span 1;
+  width: 150px;
+height: 39px;
+color:#EFEFEF;
+margin-left:30%;
+margin-top: 40%;
+background: #0000FF;
+border-radius: 40px;
+}
+
+.exit-contract .bai-profile .description{
+  grid-column: 2/span 1;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+}
+
+.exit-contract .bai-profile .description .name{
+  grid-column: 1/span 1;
+  color: black;
+}
+.exit-contract .bai-profile .description .field1{
+  grid-column: 1/span 1;
+  grid-row: 1/ span 1;
+  color: black;
+}
+.exit-contract .bai-profile .description .feedback{
+  grid-column: 1/span 2;
+  grid-row: 2/ span 1;
+  color: black;
+}
+
+.exit-contract .bai-profile .description .rating{
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+  color: black;
+}
+
+.Login{
+  height: 50vh;
+  width:40vh;
+  justify-self: center;
+  padding: 15vh;
+  margin-top: 20px;
+  display: grid;
+  overflow-y: auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background: #FEFEFE;
+  box-shadow: 4px 4px 17px 5px #EFEFEF;
+}
+
+.Login h2{
+  color: black;
+  text-align: left;
+}
+
+.Login .Phone-Number{
+  color: black;
+  width: 100%;
+}
+
+.Login .otp{
+  color: black;
+}
+
+.Login .choose-dashboard{
+  color: black;
+}
+
+.Login .login-submit{
+  color: rgb(255, 255, 255);
+  width: 150px;
+  height: 30px;
+  background: #0000FF;
+  border-radius: 10px;
+  align-self: center;
+  justify-self: center;
+}
+
+.Dashboard {
+  height: 50vh;
+  width:100vh;
+  justify-self: center;
+  padding: 15vh;
+  margin-top: 20px;
+  display: grid;
+  overflow-y: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+  gap: 20px;
+  background: #FEFEFE;
+box-shadow: 4px 4px 17px 5px #EFEFEF;
+ 
+}
+.Dashboard h2 {
+ grid-column: 1/span 3;
+ grid-row:1/span 1 ; 
+ color:#010048;
+ 
+}
+.Dashboard .ui-form{
+  grid-column: 1/span 3;
+  grid-row:2/span 3 ; 
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.Dashboard .ui-form .field1{
+  grid-column: 1/span 1;
+  grid-row:1/span 1 ;
+  gap: 8px;
+  color:#010048;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.Dashboard .ui-form .field1 .input{
+
+  grid-row:2/span 1 ;
+  color:#010048;
+  border-radius: 45px;
+  border: 1px solid
+
+}
+.Dashboard .ui-form .field2{
+  grid-column: 0/span 1;
+  grid-row:1/span 1 ;
+  gap: 8px;
+  color:#010048;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+}
+.Dashboard .ui-form .field2 .input{
+
+  grid-row:2/span 1 ;
+  color:#010048;
+  border-radius: 45px;
+  border: 1px solid
+
+}
+.Dashboard .ui-form .field3{
+  padding-top: 3vh;
+  grid-column: 1/span 2;
+ 
+  grid-row:2/span 1 ;
+  color:#010048;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+}
+.Dashboard .ui-form .field3 .input{
+
+  grid-row:1/span 1 ;
+  color:#010048;
+  border-radius: 45px;
+  border: 1px solid
+
+}
+.Dashboard .ui-form .field4{
+  grid-column: 1/span 1;
+  padding-top: 1vh;
+
+  gap: 8px;
+  color:#010048;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.Dashboard .ui-form .field4 .input{
+
+  grid-row:2/span 1 ;
+  color:#010048;
+  border-radius: 45px;
+  margin-bottom: 3vh;
+  border: 1px solid
+
+}
+.Dashboard .ui-form .field5{
+  grid-column: 2/span 1;
+  padding-top: 1vh;
+
+  gap: 8px;
+  color:#010048;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.Dashboard .ui-form .field5 .input{
+
+  grid-row:2/span 1 ;
+  color:#010048;
+  border-radius: 45px;
+  border: 1px solid
+
+}
+.Dashboard .ui-form .field6{
+  grid-column: 1/span 1;
+  height: 50px;
+  padding-top: 3vh;
+  color:#010048;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.Dashboard .ui-form .field6 .input{
+
+  grid-row:2/span 1 ;
+  color:#010048;
+  border-radius: 45px;
+  border: 1px solid
+
+}
+.Dashboard .ui-form .field7{
+  grid-column: 2/span 1;
+  height: 50px;
+  padding-top: 3vh;
+  color:#010048;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.Dashboard .ui-form .Example{
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+  padding-top: 4vh;
+  color:#010048;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.Example .MultiSelect{
+  color: black;
+}
+.Dashboard .ui-form .but1{
+  background-color:#0000bf;
+  grid-column: 1/span 2;
+  border-radius: 20px;
+  height:40px;
+  width:200px;
+  margin-top:5vh;
+  text-align: center;
+  color:#FFFFFF;
+  justify-self: center;
+}
+
+.select .dropdown-container {
+  width: 300px;
+}
+
+.ServiceContainer{
+  display: grid;
+  grid-template-columns: 1fr 4fr  ;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #010048;
+  margin-bottom: 2vh;
+}
+
+.ServiceContainer .Logo{
+  width:max-content;
+  grid-column: 1/ span 1;
+  border-radius: 50%;
+  margin: 1vh;
+  padding: 1vh;
+  justify-self: center;
+  border-radius: 50%;
+}
+
+.ServiceContainer .ServiceDesc{
+  grid-column: 2/ span 1 ;
+  align-self: center;
+  justify-self: start;
+  text-align: left;
+  font-size: 14px;
+}
+
+.ServiceContainer .ServiceDesc .p{
+  margin: 0;
+  padding: 0;
+}
+
+.ServiceContainer .Logo .ServicePhoto{
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  object-fit: cover;
+  align-self: center;
+  justify-self: center;
+}
+
+.Live-Call {
+  height: 80vh;
+  padding: 5vh;
+  background-color: #010048;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.Live-Call .Person {
+  grid-column: 1/ span 2;
+  grid-row: 1/ span 4;
+  border: 1px solid #1C1B60;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  font-Family:"Roboto";
+  grid-template-columns: 1fr ;
+  align-items: center;
+}
+.Live-Call .options {
+  grid-column: 1/ span 3;
+  grid-row: 1/ span 2;
+  border: 1px solid #1C1B60;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.Live-Call .Person .Photo{
+  grid-column: 1/ span 1 ;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+  object-fit: cover;
+  align-self: center;
+  justify-self: center;
+}
+
+.Live-Call .Person .Info{
+  grid-column: 1/ span 2 ;
+  grid-row: 2/span 2;
+  text-align: center;
+  margin-top: -50px;
+  justify-items: center;
+}
+
+.Live-Call .Person .Info .Name {
+  size: 6vh;
+}
+
+.Live-Call .Person .Info .Call-Status {
+  margin-top: 2vh;
+  padding: 5px 15px 5px 15px;
+  background-color: #1F2C73;
+  border-radius: 10px;
+  align-self: center;
+  width: min-content;
+}
+
+.Live-Call .Emotions2 {
+  grid-column: 3/ span 2;
+  grid-row: 1/ span 2;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.Live-Call .Emotions2 .Details2 {
+  grid-row: 1/span 1;
+  font-Family:"Roboto";
+  border-radius: 15px;
+  font-weight: lighter ;
+  font-size: 24px;
+}
+.Live-Call .Emotions2 .Details3 {
+  grid-row: 2/span 1;
+  background-color:  #1C1B60;
+  border-radius: 15px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-columns: 1fr 1fr;
+  font-size: 20px;
+}
+.Live-Call .Emotions2 .Details3 .Photo {
+  grid-column:1/span 1 ;
+  height: 4vh;
+  width: 4vh;
+  object-fit: cover;
+  margin-bottom: 12px;
+  margin-left: 35px;
+  align-self: center;
+  justify-self: center;
+}
+.Live-Call .Emotions2 .Details3 .Message {
+  grid-column:2/span 1 ;
+  border-radius: 50%;
+  margin-top: -40px;
+  object-fit: cover;
+  align-self: center;
+  margin-left: 15px;
+  font-weight: 800;
+  font-Family:"Roboto";
+  justify-self: center;
+}
+.Live-Call .Emotions2 .Details4 {
+  grid-row: 3/span 1;
+  margin-top: 20px;
+  font-Family:"Roboto";
+  border-radius: 15px;
+  font-weight: lighter ;
+  font-size: 24px;
+}
+.Live-Call .Emotions2 .Details5 {
+  grid-row: 4/span 1;
+  background-color:  #1C1B60;
+  border-radius: 15px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.Live-Call .Emotions2 .Details5 .Message {
+  border-radius: 50%;
+  object-fit: cover;
+  align-self: center;
+  margin-left: 15px;
+  font-weight: 800;
+  font-Family:"Roboto";
+  justify-self: center;
+}
+
+.Live-Call .Emotions {
+  grid-column: 3/ span 2;
+  grid-row: 3/ span 2;
+  height: 285;
+  background-color: #1C1B60;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Live-Call .Location {
+  grid-column: 5/ span 1;
+  grid-row: 1/ span 4;
+  height: 100%;
+  background-color: #1C1B60;
+  border-radius: 10px;
+  align-items: top;
+  justify-content: center;
+  text-align: center;
+}
+
+.Live-Call .dispatch{
+  grid-column: 1/ span 2;
+  grid-row: 5/ span 1;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  align-items: center;
+}
+
+.Live-Call .dispatch .Rescue-Team {
+  grid-column: 1/ span 1;
+  grid-row: 1/ span 1;
+
+  height: 100%;
+
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.Live-Call .Rescue-Team .Rescue-Logo{
+  height: 7vh;
+  width: 7vh;
+  grid-column: 1/ span 1;
+  align-self: center;
+  justify-self: center;
+}
+
+.Live-Call .dispatch .Police-Team {
+  grid-column: 3/ span 1;
+  grid-row: 1/ span 1;
+
+  height: 100%;
+
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.Live-Call .Police-Team .Rescue-Logo{
+  height: 7vh;
+  width: 7vh;
+  align-self: center;
+  justify-self: center;
+}
+
+.Live-Call .dispatch .Ambulance-Team {
+  grid-column: 2/ span 1;
+  grid-row: 1/ span 1;
+
+  height: 100%;
+
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.Live-Call .Ambulance-Team .Rescue-Logo{
+  height: 7vh;
+  width: 7vh;
+  align-self: center;
+  justify-self: center;
+}
+
+.Call-Logs {
+  height: 80vh;
+  padding: 5vh;
+  background-color: #010048;
+}
+
+.Call-Logs .Nav-Bar {
+  width: 100%;
+  height: 7vh;
+  background-color: #1C1B60;
+  border-radius: 15px;
+  text-align: center;
+  flex: auto;
+  display: grid;
+  grid-template-columns:  2fr 1fr 1.5fr 1fr 1fr 1fr;
+
+}
+
+.Call-Logs .Logs-List{
+  height: 70vh;
+  display: grid;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.Call-Logs .Logs-List .Log{
+  height: 7vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1fr 1fr 1fr;
+  text-align: center;
+  border-bottom: 1px solid #1F2C73;
+}
+
+.ReportLogo {
+  height: 20px;
+}
+
+.Maps {
+  height: 65vh;
+  padding: 5vh;
+  background-color: #010048;
+  gap: 20px;
+}
+
+.Maps .Map-Area {
+  background-color: #1C1B60;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tab-content {  
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  border-radius: 15px;
+}
+
+.Map {
+  padding: 10px;
+  background-color: #1F2C73;
+}
+
+.Map-Area .Areawise-Rank {
+  height: 75vh;
+  grid-column: 2/ span 1;
+  background-color: #1F2C73;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.tab-list {
+  padding-left: 0;
+  margin: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  width: 1fr;
+  padding: 0.5rem 1.5rem;
+}
+
+.tab-list-active {
+  background-color: #1F2C73;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.RankedCity {
+  height: 60px;
+  width: 92%;
+  background: #1C1B60;
+  margin: 4%;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+.RankedCity .Cityname {
+  grid-column: 1/ span 1;
+  grid-row: 1/ span 1;
+  font-size: 25px;
+  align-self: center;
+  justify-self: left;
+  padding-left: 20px;
+}
+
+.RankedCity .Cases {
+  grid-column: 2/ span 1;
+  grid-row: 1/ span 1;
+  font-size: 30px;
+  align-self: center;
+  justify-self: right;
+  padding-right: 20px;
+}
+.popup-content{
+  margin: auto;
+  background: #e9f4ff;
+  color: #010048;
+  text-align: center;
+  width: 30%;
+  padding: 5px;
+}
+.modal {
+  font-size: 12px;
+  background-color:#ffffff;
+  border-radius: 10px;
+}
+.modal > .header {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
